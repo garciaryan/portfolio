@@ -5,6 +5,13 @@
 </template>
 
 <style lang="scss">
+//theme
+$pink: #E3D0D8;
+$washedLavender: #E7E6F7;
+$lavender: #C6D2ED;
+$darkPink: #AEA3B0;
+$purple: #827081;
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
