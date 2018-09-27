@@ -28,6 +28,13 @@ export default {
   #nav {
     background-color: $pink;
     padding: 0;
+    a {
+      font-size: 21px;
+      font-weight: 300;
+    }
+    a.router-link-exact-active {
+      color: $purple;
+    }
   }
 
   .navbar {
