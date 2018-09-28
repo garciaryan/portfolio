@@ -1,18 +1,10 @@
 <template>
   <nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
-    <div class="link-box">
-      <router-link to="/" class="navbar-item">Home</router-link>
-      <router-link to="/about" class="navbar-item">About</router-link>
-      <img src="../assets/logo.svg" alt="logo" class="logo">
-      <router-link to="/projects" class="navbar-item">Projects</router-link>
-      <router-link to="/contact" class="navbar-item">Contact</router-link>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+    <router-link to="/" class="navbar-item">Home</router-link>
+    <router-link to="/about" class="navbar-item">About</router-link>
+    <img src="../assets/logo.svg" alt="logo" class="logo">
+    <router-link to="/projects" class="navbar-item">Projects</router-link>
+    <router-link to="/contact" class="navbar-item">Contact</router-link>
   </nav>
 </template>
 
@@ -28,8 +20,13 @@ export default {
   #nav {
     background-color: inherit;
     padding: 0;
+    .navbar-item {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
     a {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 300;
     }
     a.router-link-exact-active {
@@ -44,11 +41,11 @@ export default {
   }
 
   .link-box {
-    display: flex;
+    //display: flex;
   }
 
   .logo {
     height: 70px;
-    padding: 8px;
+    padding: 10px;
   }
 </style>

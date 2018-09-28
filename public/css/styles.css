@@ -6342,13 +6342,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-* {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300; }
-
 html, body {
   height: 100%;
   width: 100%; }
 
 .footer {
-  background-color: #E3D0D8; }
+  background-color: #E8D8DF; }

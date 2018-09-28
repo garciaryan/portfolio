@@ -2,15 +2,12 @@
   <div>
     <navBar />
     <div class="home">
+      <side-nav />
       <section class="hero left">
-        <div class="hero-body">
-          <div class="container"></div>
-        </div>
+        <div class="hero-body"></div>
       </section>
       <section class="hero right">
-        <div class="hero-body">
-          <div class="container"></div>
-        </div>
+        <div class="hero-body"></div>
       </section>
     </div>
     <footerBar />
@@ -21,12 +18,14 @@
 // @ is an alias to /src
 import navBar from '@/components/nav.vue'
 import footerBar from '@/components/footer.vue'
+import sideNav from '@/components/sideNav.vue'
 
 export default {
   name: 'home',
   components: {
     navBar,
-    footerBar
+    footerBar,
+    sideNav
   }
 }
 </script>
