@@ -17,14 +17,14 @@ export default {
 @import "@/sass/styles.scss";
   .side-nav {
     position: fixed;
-    width: 15vw;
+    width: 10vw;
     height: calc(100vh - 192px);
     display: flex;
     right: 0;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 25px;
-    animation: 3s slideLeft;
+    animation: 1.8s slideLeft;
     a {
       color: $purple;
     }
@@ -35,7 +35,7 @@ export default {
       left: 100%;
     }
     to {
-      left: 85%;;
+      left: 90%;
     }
   }
 </style>
