@@ -7,10 +7,16 @@ $washedLavender: #E7E6F7;
 $lavender: #C6D2ED;
 $darkPink: #AEA3B0;
 $purple: #827081;
+$whitePink: #F2E9ED;
 
 @import "../../node_modules/bulma/bulma.sass";
  
 * {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
 }
