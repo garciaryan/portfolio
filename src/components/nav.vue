@@ -1,5 +1,5 @@
 <template>
-  <nav id="nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
     <div class="link-box">
       <router-link to="/" class="navbar-item">Home</router-link>
       <router-link to="/about" class="navbar-item">About</router-link>
@@ -26,7 +26,7 @@ export default {
 @import "@/sass/styles.scss";
 
   #nav {
-    background-color: $pink;
+    background-color: inherit;
     padding: 0;
     a {
       font-size: 21px;
@@ -44,9 +44,7 @@ export default {
   }
 
   .link-box {
-    width: 66%;
     display: flex;
-    justify-content: space-between;
   }
 
   .logo {

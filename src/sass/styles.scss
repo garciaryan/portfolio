@@ -16,7 +16,13 @@ $whitePink: #F2E9ED;
   font-weight: 300;
 }
 
+//universals
 html, body {
   height: 100%;
   width: 100%;
+}
+
+//footer
+.footer {
+  background-color: $pink;
 }

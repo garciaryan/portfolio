@@ -17,6 +17,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/sass/styles.scss";
+  .footer {
+    height: 15vh;
+  }
   .name {
     font-weight: 400;
 
