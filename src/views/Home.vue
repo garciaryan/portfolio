@@ -3,6 +3,11 @@
     <navBar />
     <div class="home">
       <side-nav />
+      <div class="images">
+        <div class="img1">
+          <!-- <img class="pres-img" src="../assets/presenting.jpg" alt="me, presenting an app"> -->
+        </div>
+      </div>
       <section class="hero left">
         <div class="hero-body"></div>
       </section>
@@ -60,6 +65,14 @@ export default {
       right: 0;
       bottom: 0;
       animation: 1.5s slideDown;
+    }
+    .images {
+      .img1 {
+        .pres-img {
+          padding: 10px;
+          width: 210px;
+        }
+      }
     }
   }
 

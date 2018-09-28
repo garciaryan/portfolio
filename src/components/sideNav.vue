@@ -27,6 +27,10 @@ export default {
     animation: 1.8s slideLeft;
     a {
       color: $purple;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.8);
+      }
     }
   }
 
