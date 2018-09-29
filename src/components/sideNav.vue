@@ -1,5 +1,5 @@
 <template>
-  <div class="side-nav">
+  <div class="side-nav is-hidden-mobile">
     <a href="https://github.com/garciaryan"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/ryan-garcia-b98b66127/"><i class="fab fa-linkedin-in"></i></a>
     <a href="https://www.instagram.com/yetanotheryan/?hl=en"><i class="fab fa-instagram"></i></a>
@@ -25,6 +25,7 @@ export default {
     justify-content: space-evenly;
     font-size: 25px;
     animation: 1.8s slideLeft;
+    text-align: center;
     a {
       color: $purple;
       transition: all 0.2s ease-in-out;

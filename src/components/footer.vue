@@ -1,9 +1,14 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <span class="name">rgarciadev<span class="copy">&copy;</span> front end development</span>
-      <div class="address">
-        <span>Fresno, CA</span>
+    <div class="content columns">
+      <div class="column logo-col">
+        <img src="../assets/logo.svg" alt="logo" class="logo">
+      </div>
+      <div class="column">
+        <span class="name">rgarciadev<span class="copy">&copy;</span> front end development</span>
+        <div class="address">
+          <span>Fresno, CA</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -25,6 +30,13 @@ export default {
 
     .copy {
       font-weight: 300;
+    }
+  }
+  .logo-col {
+    justify-content: flex-end;
+    display: flex;
+    .logo {
+      height: 50px;
     }
   }
 
