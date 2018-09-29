@@ -14,6 +14,12 @@
       <section class="hero right">
         <div class="hero-body"></div>
       </section>
+      <div class="left-text">
+        <h1>a website for </h1>
+      </div>
+      <div class="right-text">
+        <h1>{{textArray}}</h1>
+      </div>
     </div>
     <footerBar />
   </div>
@@ -31,6 +37,18 @@ export default {
     navBar,
     footerBar,
     sideNav
+  },
+
+  data () {
+    return {
+      words: ['your business', 'your hobby', 'your startup', 'a friend', 'you']
+    }
+  },
+
+  computed: {
+    textArray () {
+      console.log(this.words);
+    }
   }
 }
 </script>
@@ -72,6 +90,27 @@ export default {
           padding: 10px;
           width: 210px;
         }
+      }
+    }
+    .left-text {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h1 {
+        font-size: 2.2em;
+        font-weight: 300;
+        padding-right: 5px;
+      }
+    }
+    .right-text {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 2.2em;
+        font-weight: 300;
+        padding-left: 5px;
       }
     }
   }
