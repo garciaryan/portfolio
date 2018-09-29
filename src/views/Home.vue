@@ -41,7 +41,7 @@ export default {
   .home {
     display: flex;
     position: relative;
-    min-height: calc(100vh - 192px);
+    min-height: 100vh;
     .hero {
       width: 50%;
       position: absolute;
