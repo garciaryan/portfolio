@@ -18,7 +18,15 @@
         <h1>a website for </h1>
       </div>
       <div class="right-text">
-        <h1>{{textArray}}</h1>
+        <vue-typed-js 
+          :strings="['your business', 'your hobby', 'your startup', 'a friend', 'you']"
+          :fadeOutDelay="5000"
+          :typeSpeed="75"
+          :fadeOut="true"
+          :showCursor="false"
+          :loop="true">
+          <h1 class="typing"></h1>
+        </vue-typed-js>
       </div>
     </div>
     <footerBar />
@@ -30,25 +38,15 @@
 import navBar from '@/components/nav.vue'
 import footerBar from '@/components/footer.vue'
 import sideNav from '@/components/sideNav.vue'
+import { VueTypedJs } from 'vue-typed-js'
 
 export default {
   name: 'home',
   components: {
     navBar,
     footerBar,
-    sideNav
-  },
-
-  data () {
-    return {
-      words: ['your business', 'your hobby', 'your startup', 'a friend', 'you']
-    }
-  },
-
-  computed: {
-    textArray () {
-      console.log(this.words);
-    }
+    sideNav,
+    VueTypedJs
   }
 }
 </script>
