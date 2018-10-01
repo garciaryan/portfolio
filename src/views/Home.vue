@@ -20,7 +20,7 @@
       <div class="right-text">
         <vue-typed-js 
           :strings="['your business', 'your hobby', 'your startup', 'a friend', 'you']"
-          :fadeOutDelay="5000"
+          :fadeOutDelay="3000"
           :typeSpeed="75"
           :fadeOut="true"
           :showCursor="false"
@@ -57,7 +57,7 @@ export default {
   .home {
     display: flex;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     .hero {
       width: 50%;
       position: absolute;
@@ -99,6 +99,7 @@ export default {
         font-size: 2.2em;
         font-weight: 300;
         padding-right: 5px;
+        animation: fadeInText 3s;
       }
     }
     .right-text {
@@ -109,6 +110,7 @@ export default {
         font-size: 2.2em;
         font-weight: 300;
         padding-left: 5px;
+        animation: fadeInText 3s;
       }
     }
   }
@@ -120,5 +122,11 @@ export default {
     to {
       height: 100%;
     }
+  }
+
+  @keyframes fadeInText {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1 }
   }
 </style>
