@@ -18,7 +18,7 @@ export default {
 @import "@/sass/styles.scss";
 
   #nav {
-    background-color: inherit;
+    background-color: #fff;
     padding: 0;
     .navbar-item {
       padding: 10px;
