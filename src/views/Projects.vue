@@ -26,9 +26,19 @@
             </li>
           </ul>
         </div>
-        <div class="ordrslip" v-if="project === 'ordrslip'"></div>
-        <div class="rose-sing" v-if="project === 'rose-sing'"></div>
-        <div class="sixth-man" v-if="project === 'sixth-man'"></div>
+        <div class="prj-container">
+          <div class="ordrslip" v-if="project === 'ordrslip'">
+            <div class="container">
+              <img src="../assets/ordrslip.png" alt="ordrslip site" class="ordrslip-img">
+            </div>
+            <div class="container proj-desc">
+              <h1 class="title">OrdrSlip</h1>
+              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+            </div>
+          </div>
+          <div class="rose-sing" v-if="project === 'rose-sing'"></div>
+          <div class="sixth-man" v-if="project === 'sixth-man'"></div>
+        </div>
       </div>
     </div>
     <footerBar />
@@ -87,6 +97,34 @@ export default {
           border-color: $whitePink;
           color: $purple;
         }
+      }
+    }
+    .prj-container {
+      animation: fadeIn 3.5s;
+    }
+    .ordrslip {
+      height: 100%;
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .proj-desc {
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+        .title {
+          color: #fff;
+          font-weight: 300;
+        }
+        .subtitle {
+          color: #fff;
+          font-weight: 200;
+        }
+      }
+      .ordrslip-img {
+        height: 350px;
+        border-radius: 15px;
+        margin-bottom: 20px;
       }
     }
   }
