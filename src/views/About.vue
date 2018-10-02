@@ -53,7 +53,7 @@ export default {
   .is-ancestor {
     align-items: center;
     height: inherit;
-    animation: fadeIn 3s;
+    animation: fadeIn 2.5s;
     .box {
       &.right-tile {
         margin-right: 10vw !important;

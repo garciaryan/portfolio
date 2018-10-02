@@ -20,7 +20,7 @@
       <div class="right-text">
         <vue-typed-js 
           :strings="['your business', 'your hobby', 'your startup', 'a friend', 'you']"
-          :fadeOutDelay="3000"
+          :fadeOutDelay="1500"
           :typeSpeed="75"
           :fadeOut="true"
           :showCursor="false"
@@ -99,7 +99,7 @@ export default {
         font-size: 2.2em;
         font-weight: 300;
         padding-right: 5px;
-        animation: fadeInText 3s;
+        animation: fadeInText 2.5s;
       }
     }
     .right-text {
