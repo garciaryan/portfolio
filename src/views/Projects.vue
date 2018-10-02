@@ -29,15 +29,32 @@
         <div class="prj-container">
           <div class="ordrslip" v-if="project === 'ordrslip'">
             <div class="container">
-              <img src="../assets/ordrslip.png" alt="ordrslip site" class="ordrslip-img">
+              <img src="../assets/ordrslip.png" alt="ordrslip site" class="prj-img">
             </div>
             <div class="container proj-desc">
               <h1 class="title">OrdrSlip</h1>
               <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
             </div>
           </div>
-          <div class="rose-sing" v-if="project === 'rose-sing'"></div>
-          <div class="sixth-man" v-if="project === 'sixth-man'"></div>
+          <div class="rose-sing" v-if="project === 'rose-sing'">
+            <div class="container">
+              <img src="../assets/rose-sing.png" alt="rose-sing site" class="prj-img">
+            </div>
+            <div class="container proj-desc">
+              <h1 class="title">Rose Sing and Associates, Inc. - Electrical Consultants</h1>
+              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+            </div>
+          </div>
+          <div class="sixth-man" v-if="project === 'sixth-man'">
+            <div class="container">
+              <img src="../assets/sixth-man1.png" alt="sixth man app" class="sixth-man-img">
+              <img src="../assets/sixth-man2.png" alt="sixth man app" class="sixth-man-img">
+            </div>
+            <div class="container proj-desc">
+              <h1 class="title">Sixth Man - Fantasy Basketball Helper</h1>
+              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -101,9 +118,6 @@ export default {
     }
     .prj-container {
       animation: fadeIn 3.5s;
-    }
-    .ordrslip {
-      height: 100%;
       .container {
         display: flex;
         justify-content: center;
@@ -121,10 +135,19 @@ export default {
           font-weight: 200;
         }
       }
-      .ordrslip-img {
+      .ordrslip, .rose-sing, .sixth-man {
+        height: 100%;
+      }
+      .prj-img {
         height: 350px;
         border-radius: 15px;
         margin-bottom: 20px;
+      }
+      .sixth-man-img {
+        height: 290px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        border-radius: 15px;
       }
     }
   }
