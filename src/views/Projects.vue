@@ -33,7 +33,7 @@
             </div>
             <div class="container proj-desc">
               <h1 class="title">OrdrSlip</h1>
-              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+              <p class="subtitle">OrdrSlip is a white-labeled food ordering app mainly focused on smaller businesses. There are many different applications that OrdrSlip is responsible for, and I built out the order flow for them all. Quesadilla Gorilla is the most popular one in Fresno, so download the app and check it out! Built in AngularJS and Ionic.</p>
             </div>
           </div>
           <div class="rose-sing" v-if="project === 'rose-sing'">
@@ -42,7 +42,7 @@
             </div>
             <div class="container proj-desc">
               <h1 class="title">Rose Sing and Associates, Inc. - Electrical Consultants</h1>
-              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+              <p class="subtitle">Rose Sing is an electrical consulting agency based out of Visalia, CA. I designed and built their site using only HTML, CSS, and a handful of jQuery.</p>
             </div>
           </div>
           <div class="sixth-man" v-if="project === 'sixth-man'">
@@ -52,7 +52,7 @@
             </div>
             <div class="container proj-desc">
               <h1 class="title">Sixth Man - Fantasy Basketball Helper</h1>
-              <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, modi quis consequatur repellendus aspernatur, numquam autem vel dolor minus quo nemo facilis ad amet cupiditate alias beatae accusamus temporibus pariatur?</p>
+              <p class="subtitle">Sixth Man is a personal project that is currently unhosted. It's purpose is to search a database of players and rapidly compare their stats, all to aid in drafting and picking players up from the waiver wire. I built it in PHP and JavaScript using the Laravel and Vue frameworks.</p>
             </div>
           </div>
         </div>
