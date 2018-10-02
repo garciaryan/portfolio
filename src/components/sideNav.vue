@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "@/sass/styles.scss";
   .side-nav {
     position: fixed;
@@ -26,8 +26,9 @@ export default {
     font-size: 25px;
     animation: 1.8s slideLeft;
     text-align: center;
+    z-index: 9;
     a {
-      color: $purple;
+      color: lighten(#000, 20%);
       transition: all 0.2s ease-in-out;
       &:hover {
         transform: scale(1.8);
