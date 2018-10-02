@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content columns">
+    <div class="content columns is-mobile">
       <div class="column logo-col">
         <img src="../assets/logo.svg" alt="logo" class="logo">
       </div>

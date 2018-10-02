@@ -6,19 +6,19 @@
       <div class="prj">
         <div class="tabs is-toggle is-medium is-centered">
           <ul>
-            <li class="is-active">
+            <li @click="project = 'ordrslip'" :class="{'is-active': project === 'ordrslip'}">
               <a>
                 <span class="icon is-small"><i class="fal fa-utensils"></i></span>
                 <span>OrdrSlip</span>
               </a>
             </li>
-            <li>
+            <li @click="project = 'rose-sing'" :class="{'is-active': project === 'rose-sing'}">
               <a>
                 <span class="icon is-small"><i class="fal fa-bolt"></i></span>
                 <span>Rose Sing and Associates, Inc.</span>
               </a>
             </li>
-            <li>
+            <li @click="project = 'sixth-man'" :class="{'is-active': project === 'sixth-man'}">
               <a>
                 <span class="icon is-small"><i class="fal fa-basketball-ball"></i></span>
                 <span>6th Man</span>
@@ -26,7 +26,9 @@
             </li>
           </ul>
         </div>
-        
+        <div class="ordrslip" v-if="project === 'ordrslip'"></div>
+        <div class="rose-sing" v-if="project === 'rose-sing'"></div>
+        <div class="sixth-man" v-if="project === 'sixth-man'"></div>
       </div>
     </div>
     <footerBar />
@@ -44,6 +46,12 @@ export default {
     navBar,
     footerBar,
     sideNav
+  },
+
+  data () {
+    return {
+      project: 'ordrslip'
+    }
   }
 }
 </script>
