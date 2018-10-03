@@ -4,7 +4,7 @@
     <div class="contact">
       <side-nav />
       <div class="form-container columns is-desktop">
-        <div class="column header-col">
+        <div class="header-col">
           <h1 class="header">let's work together</h1>
         </div>
         <div class="container column">
@@ -95,6 +95,9 @@ export default {
   animation: 1.5s slideUp;
   display: flex;
   justify-content: center;
+  .header-col {
+    margin-right: 10px;
+  }
   .header {
     text-align: center;
     font-size: 35px;
@@ -102,6 +105,9 @@ export default {
   }
   .container {
     width: 100%;
+    form {
+      width: 100%;
+    }
   }
   .form-container {
     width: 80%;
@@ -127,6 +133,8 @@ export default {
         display: flex;
         align-items: center;
         padding: 0;
+        height: 33%;
+        margin-right: 0;
       }
     }
   }
