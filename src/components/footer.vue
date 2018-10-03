@@ -34,6 +34,7 @@ export default {
   }
   .logo-col {
     justify-content: flex-end;
+    align-items: center;
     display: flex;
     .logo {
       height: 50px;
