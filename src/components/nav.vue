@@ -21,7 +21,7 @@ export default {
     background-color: #fff;
     padding: 0;
     .navbar-item {
-      padding: 10px;
+      padding: 5px;
       display: flex;
       align-items: center;
     }
@@ -40,12 +40,8 @@ export default {
     justify-content: center;
   }
 
-  .link-box {
-    //display: flex;
-  }
-
   .logo {
     height: 70px;
-    padding: 10px;
+    padding: 10px 5px;
   }
 </style>
