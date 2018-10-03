@@ -3,9 +3,11 @@
     <navBar />
     <div class="contact">
       <side-nav />
-      <div class="form-container">
-        <h1 class="header">let's work together</h1>
-        <div class="container">
+      <div class="form-container columns is-desktop">
+        <div class="column header-col">
+          <h1 class="header">let's work together</h1>
+        </div>
+        <div class="container column">
           <form action="https://formspree.io/ryan@rgarciadev.com" method="POST" @submit="checkForm">
 
             <div class="field">
@@ -78,7 +80,7 @@ export default {
       this.errors = []
       if (!this.email) this.errors.push('Email required.')
       if (!this.message) this.errors.push('Message required.')
-      
+
       e.preventDefault()
     }
   }
@@ -102,7 +104,7 @@ export default {
     width: 100%;
   }
   .form-container {
-    width: 67%;
+    width: 80%;
     animation: fadeIn 2.2s;
     display: flex;
     align-items: center;
@@ -116,5 +118,17 @@ export default {
   0% {opacity: 0;}
   66% {opacity: 0;}
   100% {opacity: 1;}
+}
+@media only screen and (max-width: 375px){
+  .contact {
+    .form-container {
+      flex-direction: column;
+      .header-col {
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+    }
+  }
 }
 </style>
