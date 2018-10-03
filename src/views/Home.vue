@@ -129,4 +129,18 @@ export default {
     66% { opacity: 0; }
     100% { opacity: 1 }
   }
+  @media only screen and (max-width: 375px){
+    .home {
+      .left-text {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .right-text {
+        h1 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
 </style>
