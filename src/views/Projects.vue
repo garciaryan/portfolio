@@ -4,7 +4,7 @@
     <div class="projects">
       <side-nav />
       <div class="prj">
-        <div class="tabs is-toggle is-medium is-centered">
+        <div class="tabs is-toggle is-toggle-rounded is-centered">
           <ul>
             <li @click="project = 'ordrslip'" :class="{'is-active': project === 'ordrslip'}">
               <a>
@@ -15,7 +15,7 @@
             <li @click="project = 'rose-sing'" :class="{'is-active': project === 'rose-sing'}">
               <a>
                 <span class="icon is-small"><i class="fal fa-bolt"></i></span>
-                <span>Rose Sing and Associates, Inc.</span>
+                <span>Rose Sing</span>
               </a>
             </li>
             <li @click="project = 'sixth-man'" :class="{'is-active': project === 'sixth-man'}">
@@ -48,7 +48,7 @@
           <div class="sixth-man" v-if="project === 'sixth-man'">
             <div class="container">
               <img src="../assets/sixth-man1.png" alt="sixth man app" class="sixth-man-img">
-              <img src="../assets/sixth-man2.png" alt="sixth man app" class="sixth-man-img">
+              <img src="../assets/sixth-man2.png" alt="sixth man app" class="sixth-man-img is-hidden-mobile">
             </div>
             <div class="container proj-desc">
               <h1 class="title">Sixth Man - Fantasy Basketball Helper</h1>
@@ -161,4 +161,23 @@ export default {
     66% {opacity: 0;}
     100% {opacity: 1;}
   }
+  @media only screen and (max-width: 375px){
+    .prj {
+      .prj-container {
+        .prj-img {
+          height: 200px;
+          border-radius: 0;
+        }
+        .sixth-man-img {
+          height: 200px;
+          border-radius: 0;
+          margin-right: 0;
+        }
+        .proj-desc {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    }
+  } 
 </style>
