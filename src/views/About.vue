@@ -49,11 +49,12 @@ export default {
     background-color: $washedLavender;
     animation: 1.5s slideRight;
   }
-
   .is-ancestor {
     align-items: center;
     height: inherit;
     animation: fadeIn 2.5s;
+    width: 100%;
+    margin-left: 0 !important;
     .box {
       &.right-tile {
         margin-right: 10vw !important;
@@ -72,5 +73,17 @@ export default {
     0% {opacity: 0;}
     66% {opacity: 0;}
     100% {opacity: 1;}  
+  }
+  @media only screen and (max-width: 375px){
+    .is-ancestor {
+      .box {
+        &.right-tile {
+          margin: 0 5vw !important;
+        }
+        &.left-tile {
+          margin: 5vw 5vw 0 5vw !important;
+        }
+      }
+    }
   }
 </style>
