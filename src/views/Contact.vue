@@ -95,6 +95,13 @@ export default {
   animation: 1.5s slideUp;
   display: flex;
   justify-content: center;
+  .button.is-link {
+    background-color: $purple;
+    
+    &:hover {
+      background-color: lighten($purple, 20%);
+    }
+  }
   .header-col {
     margin-right: 10px;
   }
