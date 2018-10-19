@@ -15,7 +15,7 @@
             <p class="subtitle">Web and software developer </p>
             <div class="content">
               <p>
-                I love building beautiful websites and applications. I also love basketball, playing music, and traveling.
+                I love building beautiful websites and applications. I also love basketball, playing music, and traveling. Primarily, I work in JavaScript, Javascript frameworks (such as Vue, React, and Angular), HTML, and CSS/CSS preprocessors (SASS/LESS). I'm always looking for fun and interesting projects, so if you've got one, send me a message!
               </p>
             </div>
           </article>
