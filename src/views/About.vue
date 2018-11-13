@@ -86,4 +86,9 @@ export default {
       }
     }
   }
+  @media only screen and (min-width: 1025px){
+    .about {
+      height: 100vh;
+    }
+  }
 </style>
