@@ -44,10 +44,10 @@ export default {
 <style lang="scss" scoped>
 @import "@/sass/styles.scss";
   .about {
-    height: 100vh;
     position: relative;
     background-color: $washedLavender;
     animation: 1.5s slideRight;
+    padding-bottom: 25px;
   }
   .is-ancestor {
     align-items: center;
