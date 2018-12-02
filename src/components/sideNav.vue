@@ -1,9 +1,9 @@
 <template>
   <div class="side-nav is-hidden-mobile">
-    <a href="https://github.com/garciaryan"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/ryan-garcia-b98b66127/"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://www.instagram.com/yetanotheryan/?hl=en"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/ryan.garcia.3705"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://github.com/garciaryan" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ryan-garcia-b98b66127/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/yetanotheryan/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/ryan.garcia.3705" target="_blank"><i class="fab fa-facebook-square"></i></a>
   </div>
 </template>
 
