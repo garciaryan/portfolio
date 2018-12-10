@@ -9,7 +9,7 @@
       <div class="column logo-col">
         <img src="../assets/logo.svg" alt="logo" class="logo">
       </div>
-      <div class="column">
+      <div class="column text-col">
         <span class="name">rgarciadev<span class="copy">&copy;</span> development</span>
         <div class="address">
           <span>Fresno, CA</span>
@@ -53,6 +53,12 @@ export default {
     .logo {
       height: 50px;
     }
+  }
+  .text-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
 </style>

@@ -5,7 +5,7 @@
       <side-nav />
       <div class="images">
         <div class="img1">
-          <!-- <img class="pres-img" src="../assets/presenting.jpg" alt="me, presenting an app"> -->
+          <img class="pres-img" src="../assets/presenting.jpg" alt="me, presenting an app">
         </div>
       </div>
       <section class="hero left">
@@ -87,6 +87,7 @@ export default {
         .pres-img {
           padding: 10px;
           width: 210px;
+          position: absolute;
         }
       }
     }
