@@ -7,6 +7,9 @@
         <div class="img1">
           <img class="pres-img" src="../assets/presenting.jpg" alt="me, presenting an app">
         </div>
+        <div class="img2">
+          <img class="pres-img" src="../assets/me.jpg" alt="me, working">
+        </div>
       </div>
       <section class="hero left">
         <div class="hero-body"></div>
@@ -88,6 +91,14 @@ export default {
           padding: 10px;
           width: 210px;
           position: absolute;
+        }
+      }
+      .img2 {
+        .pres-img {
+          position: absolute;
+          width: 210px;
+          padding: 10px;
+          margin: 20px;
         }
       }
     }
